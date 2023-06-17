@@ -1,3 +1,4 @@
+<?php include('raum.php') ?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -14,13 +15,17 @@
 
         <label for="raumnr">Raum:</label>
 
-        <select id="raumnr" name="raumnr">
+        <select id="raumnr" name="raumnr" value="<?php echo $raumnr; ?>">
           <option value="">---</option>
           <option value="BR8">BR8 (Besprechungsraum für 8 Pers)</option>
-          <option value="BR6">BR6 (Besprechungsraum für 6 Pers)</option>
-          <option value="BR4">BR4 (Besprechungsraum für 4 Pers)</option>
-          <option value="B4-Nord">B4-Nord (Büro für 4 Pers)</option>
-          <option value="B4-Sud">B4-Sud (Büro für 4 Pers)</option>
+          <option value="BR6">BR6(Besprechungsraum für 6 Pers)</option>
+          <option value="BR4">BR4(Besprechungsraum für 4 Pers)</option>
+        
+          
+          
+           <option value="B4-Nord">B4-Nord (Büro für 4 Pers)</option>
+           <option value="B4-Sud">B4-Sud(Büro für 4 Pers)</option>
+          
           <option value="B3">B3 (Büro für 3 Pers)</option>
           <option value="B1-1">B1-1 (Büro für 1 Pers)</option>
           <option value="B1-2">B1-2 (Büro für 1 Pers)</option>
@@ -31,7 +36,7 @@
         </select><br><br>
 
         <label for="etagenr">Etage:</label>
-        <select id="etagenr" name="etagenr">
+        <select id="etagenr" name="etagenr" value="<?php echo $etagenr; ?>">
             <option value="">---</option>
             <option value="Etage 1">Etage 1</option>
             <option value="Etage 2">Etage 2</option>
@@ -40,17 +45,15 @@
           </select><br><br>
 
         <label for="date">Datum:</label>
-        <input type="date" name="datum"><br><br>
+
+        <input type="date" name="datum" value="<?php echo $datum; ?>"><br><br>
         
         <label for="startzeit">Startzeit:</label>
-        <input type="time" name="startzeit"><br><br>
+        <input type="time" name="startzeit" value="<?php echo $startzeit; ?>"><br><br>
         <label for="endzeit">Endzeit:</label>
-        <input type="time" name="endzeit"><br><br>
+        <input type="time" name="endzeit" value="<?php echo $endzeit; ?>"><br><br>
         
         <input type="submit" name="submit">
-    </form>
-
-    <?php include('raum.php'); ?>
+      </form>
 </body>
 </html>
-
