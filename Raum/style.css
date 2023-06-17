@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Lora', sans-serif;
+}
+body{
+    background-color: black
+}
+
+h3{
+    padding: 12px;
+    margin: 12px;
+    text-align: center;
+    color: white;
+    font-size: 2.1rem;
+
+}
+form {
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    background: linear-gradient(to top, rgba(13, 4, 4, 0.5)20%,rgba(0,0,0,0.5)20%), url(Raum.jpeg);
+    
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(228, 237, 246);
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="time"]
+   {
+    padding: 12px;
+    border-radius: 20px;
+    border: 12px;
+    margin-bottom: 12px;
+    width: 100%;
+    font-family:  'Lora', sans-serif;
+  }
+  
+  input[type="submit"] {
+    background-color:  #4FD1C5;
+    color: rgb(27, 4, 22);
+    padding: 10px 20px;
+    border: 10px;
+    font-size: 1.5rem;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+  min-width: 180px;
+  min-height: 50px;
+  font-family: 'Lora', sans-serif;
+  letter-spacing: 1.7px;
+  font-weight: 590;
+  color: #313133;
+  background: linear-gradient(90deg, rgb(35, 243, 215)0%, rgb(101, 196, 187) 100%);
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  }
+
+  select{
+    box-shadow: 0 10px 25px rgba(34, 2, 2, 0.9);
+    font-size: 1.2rem;
+    padding: 1rem 1.2rem;
+    background: rgb(105, 101, 101);
+    color: rgb(230, 240, 238);
+    width: 350px;
+    border-radius: 19px; 
+  }
